@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+App1 -> SC1: REST
+SC1 --> Kafka
+
+SC2 --> Kafka
+SC2 -> App2:REST
+
+App2 -> SC2:REST
+SC2 --> Kafka
+
+SC1 --> Kafka
+SC1 -> App1
+
+
+'Alice -> Bob: Authentication Request
+'Bob --> Alice: Authentication Response
+'
+'Alice -> Bob: Another authentication Request
+'Alice <-- Bob: another authentication Response
+@enduml

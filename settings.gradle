@@ -1,0 +1,5 @@
+rootProject.name = 'orc-to-chor'
+
+include 'libs:side-cat-starter'
+
+
