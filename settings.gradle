@@ -1,5 +1,7 @@
 rootProject.name = 'orc-to-chor'
 
-include 'libs:side-cat-starter'
+include 'libs:csc-api'
+include 'libs:csc-model'
+include 'apps:csc-starter'
 
 

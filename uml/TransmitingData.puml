@@ -1,0 +1,15 @@
+@startuml
+
+class TransferMessage {
+    activityId
+    scenarioId
+    Object payload
+}
+
+class TransferHeader {
+   messageId
+   creationDateTime
+   authorAlias
+}
+TransferMessage --> TransferHeader
+@enduml
