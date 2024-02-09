@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'application'
-    id 'jacoco'
 }
 
 configurations {
@@ -11,6 +10,13 @@ configurations {
 }
 
 dependencies {
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations'
+
+    implementation 'jakarta.validation:jakarta.validation-api'
+
 }

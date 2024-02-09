@@ -15,7 +15,7 @@ idea {
     }
 }
 
-allprojects {
+subprojects {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 
@@ -27,12 +27,18 @@ allprojects {
     }
 
     apply plugin: "io.spring.dependency-management"
-    dependencyManagement {
-        imports {
-        }
-        dependencies {
+
+    dependencyManagement{
+        dependencies{
+            dependency 'org.projectlombok:lombok:1.18.30'
+            dependency 'org.projectlombok:lombok:1.18.30'
+
+            dependency 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+            dependency 'com.fasterxml.jackson.core:jackson-annotations:2.16.1'
+            dependency 'jakarta.validation:jakarta.validation-api:3.0.2'
 
         }
     }
+
 }
 
