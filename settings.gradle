@@ -3,5 +3,9 @@ rootProject.name = 'orc-to-chor'
 include 'libs:csc-api'
 include 'libs:csc-model'
 include 'apps:csc-starter'
+include 'apps:csc-db-migration'
+
+// Примеры применения
+include 'example:service_1'
 
 
