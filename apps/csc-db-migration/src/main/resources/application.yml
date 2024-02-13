@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: ${CSC_DATABASE_URL}
+    username: ${CSC_DATABASE_USERNAME}
+    password: ${CSC_DATABASE_PASSWORD}
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
