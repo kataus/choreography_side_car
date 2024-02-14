@@ -1,0 +1,34 @@
+code: STARTER
+name: Запуск оценки
+services:
+  - name: service
+    path: http://localhost:10101
+scenarios:
+  - code: SAVE_DATA
+    name: Только сохраняем данные о запросе
+    sla: 3m
+    triggres:
+      - AB
+      - C
+  - code: RUN_SCORRING
+    name: Запуск оценки платежеспособности
+    sla: 3m
+    triggers:
+      - G
+triggers:
+  - code: AB
+    service: service
+    events:
+      - A
+      - B
+  - code: C
+    service: service
+    events:
+      - C
+  - code: G
+    service: service
+    events:
+      - G
+
+
+
